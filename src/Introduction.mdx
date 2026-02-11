@@ -1,33 +1,41 @@
-import { Meta } from '@storybook/blocks';
+import { Meta } from '@storybook/blocks'
 
-<Meta title="Introduction" />
+<Meta title="Mozo/Introduction" />
 
 # Mozo Design System
 
-A design system built with **Storybook** and based on **[Bootstrap 5.3](https://getbootstrap.com/docs/5.3/)** components and documentation.
+Design system for [Mozo – The Money Saving Zone](https://mozo.com.au/), built with **Storybook** and **Bootstrap 5**.
 
-## What's included
+## Brand
 
-- **Components** — Buttons, Cards, Alerts, Badges, Breadcrumbs, Accordions, Forms, Modals, Navs, and more, following Bootstrap 5.3 markup and styles.
-- **Documentation** — Each component includes usage notes and variants aligned with the [official Bootstrap docs](https://getbootstrap.com/docs/5.3/components/).
-- **Theme** — Bootstrap’s CSS (and optional JS for interactive components) is loaded in Storybook so you can see the default theme and customize it later.
+- **Primary color:** `#11322c` (Mozo forest green)
+- All primary buttons, links, and accents use this color via Bootstrap CSS variables.
 
-## Getting started
+## Stack
 
-1. **Browse components** in the sidebar under **Components**.
-2. **Use the Controls** panel to try different props/variants where available.
-3. **Copy code** from the Docs or Canvas tab to use in your app.
+- **React** + **TypeScript**
+- **Bootstrap 5.3** (latest) for layout and components
+- **Vite** for build
+- **Storybook 8** for documentation and development
 
-## Bootstrap 5.3 reference
+## Components
 
-- [Bootstrap 5.3 Components](https://getbootstrap.com/docs/5.3/components/)
-- [Bootstrap 5.3 Layout](https://getbootstrap.com/docs/5.3/layout/)
-- [Bootstrap 5.3 Forms](https://getbootstrap.com/docs/5.3/forms/overview/)
-- [Bootstrap 5.3 Utilities](https://getbootstrap.com/docs/5.3/utilities/api/)
+Use the sidebar to explore:
 
-## Tech stack
+- **Button** – Primary, secondary, outline, sizes
+- **Card** – Header, body, footer, image
+- **Badge** – Labels and pills
+- **Input** – Form fields with label, hint, error
+- **Alert** – Notifications and messages
 
-- **React 18** + **TypeScript**
-- **Vite**
-- **Storybook 8**
-- **Bootstrap 5.3** (CSS + JS)
+All components are built on Bootstrap classes and themed with the Mozo primary color. Import from `@/components` or the specific component path.
+
+## Usage
+
+```tsx
+import { Button, Card, Badge, Input, Alert } from '@/components'
+```
+
+## Design tokens
+
+See **Mozo / Design Tokens** for colors, typography, and spacing. Tokens are defined in `src/design-tokens.ts` and applied via `src/styles/mozo-theme.css`.

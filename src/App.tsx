@@ -1,13 +1,18 @@
-import './App.css'
+import { Button, Card, CardBody, CardTitle, CardText } from './components'
 
-function App() {
+export default function App() {
   return (
     <div className="container py-5">
       <h1 className="mb-4">Mozo Design System</h1>
-      <p className="lead">Based on Bootstrap 5.3. Run Storybook to browse components and documentation.</p>
-      <code>npm run storybook</code>
+      <Card style={{ maxWidth: 360 }}>
+        <CardBody>
+          <CardTitle>Welcome</CardTitle>
+          <CardText>
+            Run <code>npm run storybook</code> to explore all components.
+          </CardText>
+          <Button variant="primary">Get started</Button>
+        </CardBody>
+      </Card>
     </div>
   )
 }
-
-export default App

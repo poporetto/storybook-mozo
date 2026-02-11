@@ -1,0 +1,37 @@
+/**
+ * Mozo Design System – Theme Overrides
+ * Primary: #11322c (Mozo brand green)
+ * Based on Bootstrap 5.3 CSS variables
+ * @see https://getbootstrap.com/docs/5.3/customize/css-variables/
+ */
+
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+:root,
+[data-bs-theme='light'] {
+  /* Mozo primary – dark forest green */
+  --bs-primary: #11322c;
+  --bs-primary-rgb: 17, 50, 44;
+  --bs-primary-text-emphasis: #0a1f1b;
+  --bs-primary-bg-subtle: #d4e0de;
+  --bs-primary-border-subtle: #a9c2be;
+
+  /* Links follow primary */
+  --bs-link-color: #11322c;
+  --bs-link-color-rgb: 17, 50, 44;
+  --bs-link-hover-color: #0e2924;
+  --bs-link-hover-color-rgb: 14, 41, 36;
+
+  /* Focus ring uses primary */
+  --bs-focus-ring-color: rgba(17, 50, 44, 0.25);
+}
+
+[data-bs-theme='dark'] {
+  --bs-primary: #2d6b5f;
+  --bs-primary-rgb: 45, 107, 95;
+  --bs-primary-text-emphasis: #7eb8ad;
+  --bs-primary-bg-subtle: #0a1f1b;
+  --bs-primary-border-subtle: #1a3d36;
+  --bs-link-color: #7eb8ad;
+  --bs-link-hover-color: #9ac9c1;
+}
